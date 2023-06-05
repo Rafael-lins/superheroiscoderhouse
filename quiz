@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz dos Vingadores</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#quiz {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.options label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  display: block;
+  margin-top: 10px;
+}
+</style>
+</head>
+<body>
+<h1>Quiz dos Vingadores</h1>
+<div id="quiz">
+  <div class="question">
+    <p>Qual é o nome do herói que usa uma armadura tecnológica e é conhecido como o "gênio, bilionário, playboy e filantropo"?</p>
+    <div class="options">
+      <label>
+        <input type="radio" name="q1" value="a"> Tony Stark
+      </label>
+      <label>
+        <input type="radio" name="q1" value="b"> Steve Rogers
+      </label>
+      <label>
+        <input type="radio" name="q1" value="c"> Thor Odinson
+      </label>
+    </div>
+  </div>
+  <div class="question">
+    <p>Qual é o nome da equipe de super-heróis da Marvel que inclui personagens como Homem de Ferro, Capitão América, Thor, Hulk, Viúva Negra e Gavião Arqueiro?</p>
+    <div class="options">
+      <label>
+        <input type="radio" name="q2" value="a"> X-Men
+      </label>
+      <label>
+        <input type="radio" name="q2" value="b"> Os Vingadores
+      </label>
+      <label>
+        <input type="radio" name="q2" value="c"> Quarteto Fantástico
+      </label>
+    </div>
+  </div>
+  <div class="question">
+    <p>Qual é o nome do vilão que é conhecido como o "Titã Louco" e busca reunir as Joias do Infinito para obter poder absoluto?</p>
+    <div class="options">
+      <label>
+        <input type="radio" name="q3" value="a"> Loki
+      </label>
+      <label>
+        <input type="radio" name="q3" value="b"> Ultron
+      </label>
+      <label>
+        <input type="radio" name="q3" value="c"> Thanos
+      </label>
+    </div>
+  </div>
+  <div class="question">
+    <p>Qual é o nome do metal raro e praticamente indestrutível encontrado em Wakanda, utilizado para fazer o traje do Pantera Negra?</p>
+    <div class="options">
+      <label>
+        <input type="radio" name="q4" value="a"> Vibranium
+      </label>
+      <label>
+        <input type="radio" name="q4" value="b"> Adamantium
+      </label>
+      <label>
+        <input type="radio" name="q4" value="c"> Uru
+      </label>
+    </div>
+  </div>
+  <div class="question">
+    <p>Qual é o nome da joia que concede poderes extraordinários a quem a possui e é usada por Visão em sua testa?</p>
+    <div class="options">
+      <label>
+        <input type="radio" name="q5" value="a"> Joia do Espaço
+      </label>
+      <label>
+        <input type="radio" name="q5" value="b"> Joia do Poder
+      </label>
+      <label>
+        <input type="radio" name="q5" value="c"> Joia da Mente
+      </label>
+    </div>
+  </div>
+  <div class="question">
+    <p>Qual é o nome da joia que dá controle sobre a realidade e é usada pelo vilão em "Thor: O Mundo Sombrio"?</p>
+    <div class="options">
+      <label>
+        <input type="radio" name="q6" value="a"> Joia do Tempo
+      </label>
+      <label>
+        <input type="radio" name="q6" value="b"> Joia do Poder
+      </label>
+      <label>
+        <input type="radio" name="q6" value="c"> Joia da Realidade
+      </label>
+    </div>
+  </div>
+  <div class="question">
+    <p>Qual é o nome do ator que interpreta o Homem de Ferro nos filmes da Marvel?</p>
+    <div class="options">
+      <label>
+        <input type="radio" name="q7" value="a"> Chris Evans
+      </label>
+      <label>
+        <input type="radio" name="q7" value="b"> Robert Downey Jr.
+      </label>
+      <label>
+        <input type="radio" name="q7" value="c"> Chris Hemsworth
+      </label>
+    </div>
+  </div>
+  <div class="question">
+    <p>Qual é o nome do ator que interpreta o Capitão América nos filmes da Marvel?</p>
+    <div class="options">
+      <label>
+        <input type="radio" name="q8" value="a"> Chris Pratt
+      </label>
+      <label>
+        <input type="radio" name="q8" value="b"> Chris Evans
+      </label>
+      <label>
+        <input type="radio" name="q8" value="c"> Chris Hemsworth
+      </label>
+    </div>
+  </div>
+  <div class="question">
+    <p>Qual é o nome do ator que interpreta o Thor nos filmes da Marvel?</p>
+    <div class="options">
+      <label>
+        <input type="radio" name="q9" value="a"> Chris Evans
+      </label>
+      <label>
+        <input type="radio" name="q9" value="b"> Robert Downey Jr.
+      </label>
+      <label>
+        <input type="radio" name="q9" value="c"> Chris Hemsworth
+      </label>
+    </div>
+  </div>
+  <div class="question">
+    <p>Qual é o nome da atriz que interpreta a Viúva Negra nos filmes da Marvel?</p>
+    <div class="options">
+      <label>
+        <input type="radio" name="q10" value="a"> Scarlett Johansson
+      </label>
+      <label>
+        <input type="radio" name="q10" value="b"> Jennifer Lawrence
+      </label>
+      <label>
+        <input type="radio" name="q10" value="c"> Elizabeth Olsen
+      </label>
+    </div>
+  </div>
+  <button onclick="checkAnswers()">Verificar Respostas</button>
+</div>
+
+<script>
+function checkAnswers() {
+  var q1Answer = document.querySelector('input[name="q1"]:checked');
+  var q2Answer = document.querySelector('input[name="q2"]:checked');
+  var q3Answer = document.querySelector('input[name="q3"]:checked');
+  var q4Answer = document.querySelector('input[name="q4"]:checked');
+  var q5Answer = document.querySelector('input[name="q5"]:checked');
+  var q6Answer = document.querySelector('input[name="q6"]:checked');
+  var q7Answer = document.querySelector('input[name="q7"]:checked');
+  var q8Answer = document.querySelector('input[name="q8"]:checked');
+  var q9Answer = document.querySelector('input[name="q9"]:checked');
+  var q10Answer = document.querySelector('input[name="q10"]:checked');
+
+  if (!q1Answer || !q2Answer || !q3Answer || !q4Answer || !q5Answer || !q6Answer || !q7Answer || !q8Answer || !q9Answer || !q10Answer) {
+    alert("Por favor, responda todas as questões!");
+    return;
+  }
+
+  var score = 0;
+  if (q1Answer.value === "a") {
+    score++;
+  }
+  if (q2Answer.value === "b") {
+    score++;
+  }
+  if (q3Answer.value === "c") {
+    score++;
+  }
+  if (q4Answer.value === "a") {
+    score++;
+  }
+  if (q5Answer.value === "c") {
+    score++;
+  }
+  if (q6Answer.value === "c") {
+    score++;
+  }
+  if (q7Answer.value === "b") {
+    score++;
+  }
+  if (q8Answer.value === "b") {
+    score++;
+  }
+  if (q9Answer.value === "c") {
+    score++;
+  }
+  if (q10Answer.value === "a") {
+    score++;
+  }
+
+  alert("Você acertou " + score + " de 10 questões!");
+}
+</script>
+</body>
+</html>
