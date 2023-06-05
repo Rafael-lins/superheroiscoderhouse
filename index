@@ -18,6 +18,30 @@
                 </button>
                 <button>
                     Quiz
+                    <!DOCTYPE html>
+<html>
+<head>
+<title>Botão Quiz</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.quiz-button {
+
+}
+</style>
+</head>
+<body>
+<h1>Quiz</h1>
+<a href="quiz.html" class="quiz-button">Iniciar Quiz</a>
+</body>
+</html>
                 </button>
                 <button>
                     Login
